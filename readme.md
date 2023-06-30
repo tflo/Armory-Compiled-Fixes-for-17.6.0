@@ -9,7 +9,7 @@ This contains all necessary fixes to make Armory 17.6.0 work with the current Wo
 - Wrong quest tags in the quests tooltips of the summary sheet ("Completed' instead of "Daily"/"Weekly").
 - Missing autofocus for the search box of the Search frame. (This is an improvement, and as such optional.)
 
-I have only included fixes for issues I was experiencing myself. I'm aware that there posts about other issues, but I guess these are due to interferences with certain other addons.
+I have only included fixes for issues I was experiencing myself. I'm aware that there are posts about other issues, but I guess these are due to interferences with other addons. It would take too much time trying to reduplicate these issues.
 
 As of now and with my usual addon sets, Armory runs completely fine and error-free for me with these fixes.
 
