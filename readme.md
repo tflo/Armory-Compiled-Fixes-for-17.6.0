@@ -2,7 +2,7 @@
 
 Fixes to make Armory 17.6.0 work with WoW 10.1
 
-## This contains all necessary fixes to make Armory 17.6.0 work with the current WoW 10.1:
+## This mod contains fixes to make Armory 17.6.0 work with the current WoW 10.1:
 
 - Tradeskill tabs: `ArmoryTradeSkills.lua:912: attempt to index local 'info' (a nil value)`.
 - Quest tab: `ArmoryQuestLogFrame.lua:192: attempt to index global 'QUEST_TAG_TCOORDS' (a nil value)`.
