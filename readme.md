@@ -1,12 +1,12 @@
 # Armory: Compiled Fixes for 17.6.0
 
-Fixes to make Armory 17.6.0 work with WoW 10.1
+I highly appreciate that Warmexx took the time to update Armory for DF (a massive undertaking due to many, many API changes). At the same time, it pains me to see that Armory does not run properly in 10.1, just because of a few easily fixable things.
 
 ## This mod contains fixes to make Armory 17.6.0 work with the current WoW 10.1:
 
 - Tradeskill tabs: `ArmoryTradeSkills.lua:912: attempt to index local 'info' (a nil value)`.
 - Quest tab: `ArmoryQuestLogFrame.lua:192: attempt to index global 'QUEST_TAG_TCOORDS' (a nil value)`.
-- Wrong quest tags in the quests tooltips of the summary sheet ("Completed' instead of "Daily"/"Weekly").
+- Wrong quest tags in the quests tooltips of the summary sheet ("Completed" instead of "Daily"/"Weekly").
 - Missing autofocus for the search box of the Search frame. (This is an improvement, and as such optional.)
 
 I have only included fixes for issues I was experiencing myself. I'm aware that there are posts about other issues, but I guess these are due to interferences with other addons. It would take too much time trying to reduplicate these issues.
