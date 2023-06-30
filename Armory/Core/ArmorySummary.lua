@@ -475,7 +475,7 @@ local function DisplayQuests(tooltip, characterInfo)
                 color = Armory:HexColor(color);
 
                 myColumn = column; index, column = tooltip:SetCell(index, myColumn, color..questTitleText..FONT_COLOR_CODE_CLOSE);
-                myColumn = column; index, column = tooltip:SetCell(index, myColumn, isHeader and "" or color..(ArmoryQuestLog_GetQuestTag(questID, isComplete, frequency) or "")..FONT_COLOR_CODE_CLOSE);
+                myColumn = column; index, column = tooltip:SetCell(index, myColumn, isHeader and "" or color..(ArmoryQuestLog_GetQuestTag(questID, nil, isComplete, frequency) or "")..FONT_COLOR_CODE_CLOSE);
             end
         end
     end
