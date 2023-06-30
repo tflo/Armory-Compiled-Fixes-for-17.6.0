@@ -321,7 +321,12 @@ function ArmoryFindFrame_Update()
         WhoFrameColumn_SetWidth(ArmoryFindFrameColumnHeader3, 154);
     end
 
-    ArmoryFindFrameEditBox:SetFocus();
+    --[[ NOTE:
+    This was the attempt of the author to implement autofocus (17.7.0). Problem is: With only this change, the character
+    mapped to the keybind gets inserted into the editbox (at least on macOS), hence removing this and applying my fix
+    in ArmoryFindFrame.xml again (the one with the C_Timer).
+    ]]
+    -- ArmoryFindFrameEditBox:SetFocus();
 
     -- ScrollFrame update
     FauxScrollFrame_Update(ArmoryFindFrameScrollFrame, numResults, FIND_LINES_DISPLAYED, ARMORY_FIND_HEIGHT);
