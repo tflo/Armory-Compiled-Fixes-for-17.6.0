@@ -909,7 +909,7 @@ function Armory:GetTradeSkillInfo(index)
     end
 
     local QuestionMarkIconFileDataID = 134400;
-    if ( info.icon == QuestionMarkIconFileDataID ) then
+    if ( info and info.icon == QuestionMarkIconFileDataID ) then
         info.icon = self:GetProfessionTexture(self:GetSelectedProfession());
     end
 
