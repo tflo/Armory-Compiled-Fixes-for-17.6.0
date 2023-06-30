@@ -189,9 +189,8 @@ function ArmoryQuestLog_Update()
                 questLogTitle:SetText("  "..questLogTitleText);
                 if ( questID and C_CampaignInfo.IsCampaignQuest(questID) ) then
                     local faction = Armory:UnitFactionGroup("player");
-                    local coords = faction == "Horde" and QUEST_TAG_TCOORDS.HORDE or QUEST_TAG_TCOORDS.ALLIANCE;
-                    questLogTitle:SetNormalTexture(QUEST_ICONS_FILE);
-                    questLogTitle:GetNormalTexture():SetTexCoord( unpack(coords) );
+                    local coords = faction == "Horde" and QUEST_TAG_ATLAS.HORDE or QUEST_TAG_ATLAS.ALLIANCE;
+                    questLogTitle:GetNormalTexture():SetAtlas(coords);
                 else
                     questLogTitle:ClearNormalTexture();
                 end
