@@ -2,7 +2,7 @@
 
 Fixes to make Armory 17.6.0 work with WoW 10.1
 
-This contains all necessary fixes to make Armory 17.6.0 work with the current WoW 10.1:
+## This contains all necessary fixes to make Armory 17.6.0 work with the current WoW 10.1:
 
 - Tradeskill tabs: `ArmoryTradeSkills.lua:912: attempt to index local 'info' (a nil value)`.
 - Quest tab: `ArmoryQuestLogFrame.lua:192: attempt to index global 'QUEST_TAG_TCOORDS' (a nil value)`.
@@ -14,3 +14,9 @@ I have only included fixes for issues I was experiencing myself. I'm aware that 
 As of now and with my usual addon sets, Armory runs completely fine and error-free for me with these fixes.
 
 Except for one thing: under heavy load (i.e. right after login, when all the addons and the client are requesting information from the server), you may get an error when opening any Armory tab. This can be easily avoided by not interacting with Armory during this time. If you don't use many other addons, it's even possible that you'll never have this problem.
+
+## To install this mod:
+
+1. Click the green Code button and select "Download ZIP". 
+2. Expand the archive.
+3. Copy the Armory and ArmoryGuildBank folders to your active AddOns folder, replacing the existing ones.
