@@ -237,6 +237,9 @@
           <Anchor point="TOPLEFT" x="75" y="-36"/>
         </Anchors>
         <Scripts>
+          <OnShow>
+            C_Timer.After(0, function() self:SetFocus() end)
+          </OnShow>
           <OnEnterPressed inherit="append">
             self:ClearFocus();
             ArmoryFindFrameEditBox_OnEnterPressed(self);
