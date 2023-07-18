@@ -1,4 +1,4 @@
-<!-- Revision: 204 2022-10-16T18:37:17Z -->
+<!-- Revision: 283 2022-10-16T18:37:17Z -->
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\..\..\FrameXML\UI.xsd">
   <Script file="ArmoryTalentFrame.lua"/>

@@ -538,6 +538,8 @@ L["ARMORY_SUMMARY_TITLE"] = "Итоговые Настройки"
 L["ARMORY_TALENTS"] = "СПЕЦИАЛИЗАЦИЯ ТАЛАНТОВ:"
 L["ARMORY_TOOLTIP_HINT1"] = "Левый клик включить/выключить Армори"
 L["ARMORY_TOOLTIP_HINT2"] = "Правый клик для настроек"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "Подсказка"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "Эти настройки позволяют вам добавлять информацию в подсказки."
 L["ARMORY_TOOLTIP_TITLE"] = "Улучшение подсказки"

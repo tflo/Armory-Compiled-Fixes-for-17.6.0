@@ -464,6 +464,8 @@ L["ARMORY_SUMMARY_TITLE"] = "Opciones de Sumario"
 L["ARMORY_TALENTS"] = "ESPECIALIZACIÓN DE TALENTOS:"
 L["ARMORY_TOOLTIP_HINT1"] = "Clic-Izquierdo abre/cierra Armory"
 L["ARMORY_TOOLTIP_HINT2"] = "Clic-Derecho para opciones"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "Descripción emergente"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "Estas opciones te permiten añadir información a las descripciones emergentes."
 L["ARMORY_TOOLTIP_TITLE"] = "Mejora de descripciones emergentes"

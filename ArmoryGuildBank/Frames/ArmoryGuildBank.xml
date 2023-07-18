@@ -1,4 +1,4 @@
-<!-- Revision: 238 2022-11-19T13:52:26Z -->
+<!-- Revision: 286 2022-11-19T13:52:26Z -->
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\..\..\FrameXML\UI.xsd">
   <Script file="ArmoryGuildBank.lua"/>
   <Button name="ArmoryGuildBankLabelTemplate" virtual="true">

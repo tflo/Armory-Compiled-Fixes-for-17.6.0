@@ -493,6 +493,8 @@ L["ARMORY_SUMMARY_TITLE"] = "요약 정보 옵션"
 L["ARMORY_TALENTS"] = "특성:"
 L["ARMORY_TOOLTIP_HINT1"] = "좌-클릭: Armory 전환"
 L["ARMORY_TOOLTIP_HINT2"] = "우-클릭: 옵션"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "툴팁"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "|cFF00FFFF이 옵션은 툴팁에 정보를 추가할 수 있도록 해 줍니다."
 L["ARMORY_TOOLTIP_TITLE"] = "강화된 툴팁"

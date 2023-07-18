@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 37 2023-01-29T14:53:22Z
+    Revision: 37 2023-07-15T20:22:18Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -53,6 +53,7 @@ ARMORY_TOOLTIP1                             = L["ARMORY_TOOLTIP1"];
 ARMORY_TOOLTIP2                             = L["ARMORY_TOOLTIP2"];
 ARMORY_TOOLTIP_HINT1                        = L["ARMORY_TOOLTIP_HINT1"];
 ARMORY_TOOLTIP_HINT2                        = L["ARMORY_TOOLTIP_HINT2"];
+ARMORY_TOOLTIP_HINT3                        = L["ARMORY_TOOLTIP_HINT3"];
 ARMORY_SUBTEXT                              = L["ARMORY_SUBTEXT"];
 ARMORY_TOOLTIP_LABEL                        = L["ARMORY_TOOLTIP_LABEL"];
 ARMORY_TOOLTIP_TITLE                        = L["ARMORY_TOOLTIP_TITLE"];

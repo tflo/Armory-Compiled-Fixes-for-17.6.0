@@ -1,10 +1,10 @@
-## Interface: 100100
+## Interface: 100105
 ## Title: Armory
 ## Title-frFR: Armory [Armurerie]
 ## Title-esES: Armory [Armería]
 ## Title-koKR: Armory [케릭터 정보 열람]
 ## Title-ruRU: Armory [Оружейная]
-## Version: v17.6.0
+## Version: v17.7.0
 ## Notes: Provides an overview of equipment, stats, inventory, professions, quests, spells and more for all your characters
 ## Notes-deDE: Ermöglicht einen Überblick über Ausrüstung, Werte, Inventar, Berufe, Quests, Zauber und viel mehr für alle deine Charaktere
 ## Notes-frFR: Donne un aperçu de l'équipement, stats, sacs, métiers, quêtes, sorts et plus encore pour tous vos personnages
@@ -15,6 +15,8 @@
 ## Author: Warmexx [Neighbours]
 ## SavedVariables: ArmoryDB, ArmorySettings, ArmoryModules, ArmoryCache, ArmoryShared
 ## SavedVariablesPerCharacter: ArmoryLocalSettings
+## IconTexture: Interface\AddOns\Armory\Artwork\Logo
+## AddonCompartmentFunc: Armory_AddonCompartmentFunc
 ## X-Donate: PayPal:warmexx AT wow-neighbours DOT com
 ## X-Website: http://www.wow-neighbours.com/
 ## X-Category: Inventory
