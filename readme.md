@@ -1,3 +1,9 @@
+================================================================================
+
+Since the Armory author has released a new version (17.7.0), this repo is outdated and obsolete. Related issue thread: https://legacy.curseforge.com/wow/addons/armory/issues/377
+
+================================================================================
+
 # Armory: Compiled Fixes for 17.6.0
 
 These are temporary fixes for the [Armory](https://www.curseforge.com/wow/addons/armory) World of Warcraft Retail addon.
