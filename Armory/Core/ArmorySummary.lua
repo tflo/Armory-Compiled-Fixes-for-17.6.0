@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 257 2022-11-26T12:19:34Z
+    Revision: 283 2023-07-15T13:50:40Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -475,7 +475,7 @@ local function DisplayQuests(tooltip, characterInfo)
                 color = Armory:HexColor(color);
 
                 myColumn = column; index, column = tooltip:SetCell(index, myColumn, color..questTitleText..FONT_COLOR_CODE_CLOSE);
-                myColumn = column; index, column = tooltip:SetCell(index, myColumn, isHeader and "" or color..(ArmoryQuestLog_GetQuestTag(questID, nil, isComplete, frequency) or "")..FONT_COLOR_CODE_CLOSE);
+                myColumn = column; index, column = tooltip:SetCell(index, myColumn, isHeader and "" or color..(ArmoryQuestLog_GetQuestTag(questID, i, isComplete, frequency) or "")..FONT_COLOR_CODE_CLOSE);
             end
         end
     end
