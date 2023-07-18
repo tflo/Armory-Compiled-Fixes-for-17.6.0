@@ -1,4 +1,4 @@
-<!-- Revision: 228 2022-11-10T10:30:17Z -->
+<!-- Revision: 291 2022-11-10T10:30:17Z -->
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\..\FrameXML\UI.xsd">
   <Script file="ArmoryFindFrame.lua"/>
   <Button name="ArmoryFindFrameButtonTemplate" virtual="true">
@@ -237,9 +237,6 @@
           <Anchor point="TOPLEFT" x="75" y="-36"/>
         </Anchors>
         <Scripts>
-          <OnShow>
-            C_Timer.After(0, function() self:SetFocus() end)
-          </OnShow>
           <OnEnterPressed inherit="append">
             self:ClearFocus();
             ArmoryFindFrameEditBox_OnEnterPressed(self);
