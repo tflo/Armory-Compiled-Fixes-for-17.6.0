@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 267 2022-10-30T09:57:47Z
+    Revision: 267 2023-07-15T20:22:18Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -54,11 +54,35 @@ local function GetAnchor(frame)
     return vAnchor..hAnchor, frame, (vAnchor == "TOP" and "BOTTOM" or "TOP")..hAnchor;
 end
 
+local function ShowSummary(parent, tooltip)
+    if ( not Armory:GetConfigShowSummary() ) then
+        return;
+
+    elseif ( not (Armory.summary and Armory.summary:IsShown()) ) then
+        if ( Armory.LDB.anchorFrame == nil ) then
+            Armory.LDB.anchorFrame = CreateFrame("Frame");
+        end
+        Armory.LDB.anchorFrame:SetParent(parent);
+        Armory.LDB.anchorFrame:SetAllPoints(parent);
+
+        Armory.summaryEnabled = true;
+        if ( not tooltip ) then
+            Armory:InitializeSummary(GameTooltip, Armory.LDB.anchorFrame);
+        else
+            Armory:ShowSummary(self, Armory.LDB.anchorFrame);
+        end
+    end
+end
+
 function Armory.LDB:OnClick(button)
     GameTooltip:Hide();
     Armory:HideSummary();
     if ( button == "LeftButton" ) then
-        Armory:Toggle();
+        if ( IsAltKeyDown() ) then
+            ShowSummary(self);
+        else
+            Armory:Toggle();
+        end
     elseif ( button == "RightButton" ) then
         ArmoryToggleDropDownMenu(1, nil, Armory.menu, self, 0, 0);
     end
@@ -83,21 +107,16 @@ function Armory.LDB:OnTooltipShow()
         self:AddDoubleLine(ARMORY_TOOLTIP2, realm, NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, color.r, color.g, color.b);
 
         if ( table.getn(Armory:SelectableProfiles()) > 0 ) then
-            Armory:TooltipAddHints(self, ARMORY_TOOLTIP_HINT1, ARMORY_TOOLTIP_HINT2);
+            if ( Armory:GetConfigShowSummary() ) then
+                Armory:TooltipAddHints(self, ARMORY_TOOLTIP_HINT1, ARMORY_TOOLTIP_HINT2, ARMORY_TOOLTIP_HINT3);
+            else
+                Armory:TooltipAddHints(self, ARMORY_TOOLTIP_HINT1, ARMORY_TOOLTIP_HINT2);
+            end
         else
             Armory:TooltipAddHints(self, ARMORY_TOOLTIP_HINT2);
         end
 
-        if ( not (Armory.summary and Armory.summary:IsShown()) ) then
-            if ( Armory.LDB.anchorFrame == nil ) then
-                Armory.LDB.anchorFrame = CreateFrame("Frame");
-            end
-            Armory.LDB.anchorFrame:SetParent(self:GetOwner());
-            Armory.LDB.anchorFrame:SetAllPoints(self:GetOwner());
-
-            Armory.summaryEnabled = true;
-            Armory:ShowSummary(self, Armory.LDB.anchorFrame);
-        end
+        ShowSummary(self:GetOwner(), self);
     end
 end
 

@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 259 2022-10-30T09:57:47Z
+    Revision: 259 2023-07-15T10:00:10Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -454,7 +454,7 @@ function ArmoryPetFrame_UpdateSpec()
             SetPortraitToTexture(ArmoryPetSpecFrame.specIcon, icon);
             ArmoryPetSpecFrame.specName:SetText(name);
             local role = Armory:GetSpecializationRole(spec, false, true);
-            ArmoryPetSpecFrame.roleIcon:SetTexCoord(GetTexCoordsForRole(role));
+            ArmoryPetSpecFrame.roleIcon:SetTexCoord(Armory:GetTexCoordsForRole(role));
             ArmoryPetSpecFrame.roleName:SetText(_G[role]);
             local spells = Armory:GetPetSpecializationSpells(spec);
             if ( spells ) then

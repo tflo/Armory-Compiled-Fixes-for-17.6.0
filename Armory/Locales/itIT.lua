@@ -832,6 +832,8 @@ L["ARMORY_TOOLTIP_HINT1"] = "Left-click toggles Armory"
 --[[Translation missing --]]
 L["ARMORY_TOOLTIP_HINT2"] = "Right-click for options"
 --[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
+--[[Translation missing --]]
 L["ARMORY_TOOLTIP_LABEL"] = "Tooltip"
 --[[Translation missing --]]
 L["ARMORY_TOOLTIP_SUBTEXT"] = "These options allow you to add information to tooltips."

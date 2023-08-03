@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 271 2023-05-14T11:56:58Z
+    Revision: 289 2023-07-15T10:05:28Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -904,13 +904,15 @@ end
 
 function Armory:GetTradeSkillInfo(index)
     local info = GetProfessionLineValue(index);
-    if ( info and not IsRecipe(info.type) ) then
-        info.collapsed = self:GetHeaderLineState(itemContainer..selectedSkill, info.name);
-    end
+    if ( info ) then
+        if ( not IsRecipe(info.type) ) then
+            info.collapsed = self:GetHeaderLineState(itemContainer..selectedSkill, info.name);
+        end
 
-    local QuestionMarkIconFileDataID = 134400;
-    if ( info.icon == QuestionMarkIconFileDataID ) then
-        info.icon = self:GetProfessionTexture(self:GetSelectedProfession());
+        local QuestionMarkIconFileDataID = 134400;
+        if ( info.icon == QuestionMarkIconFileDataID ) then
+            info.icon = self:GetProfessionTexture(self:GetSelectedProfession());
+        end
     end
 
     return info;

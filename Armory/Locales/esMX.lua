@@ -620,6 +620,8 @@ L["ARMORY_SUMMARY_TITLE"] = "Summary Options"
 L["ARMORY_TALENTS"] = "Especialización de talentos:"
 L["ARMORY_TOOLTIP_HINT1"] = "Click Izquierdo para ocultar Armory"
 L["ARMORY_TOOLTIP_HINT2"] = "Click derecho para opciones"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "Tooltip"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "Estas opciones permiten agregar información a las tooltips."
 L["ARMORY_TOOLTIP_TITLE"] = "Tooltip de encantamiento"

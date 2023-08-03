@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 1 2022-11-16T19:36:16Z
+    Revision: 1 2023-07-15T13:33:01Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -114,6 +114,8 @@ function ArmoryGuildBankFrame_OnLoad(self)
     self:RegisterEvent("VARIABLES_LOADED");
 
     ArmoryGuildBankFrameEditBox:SetText("");
+
+    _G.ArmoryGuildbank_AddonCompartmentFunc = ArmoryGuildBankFrame_Toggle;
 end
 
 function ArmoryGuildBankFrame_CheckResponse()

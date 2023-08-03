@@ -3,6 +3,17 @@ The project page can be found on https://www.curseforge.com/wow/addons/armory.
 
 Thanks for using Armory. You can show your appreciation and support future development by donating!
 
+==== v17.7.0 ====
+# Adjustments have been made for patch 10.1.5
+# Scanning the fishing journal could throw an error; this has been fixed.
+# Add-on logo has been added.
+# Armory has been added to the add-on compartment.
+# Quests tags were not shown correctly in the summary; this has been fixed.
+# Deprecated campaign quest logic has been removed.
+# Tooltip enhancement could fail in some rare cases; this has been fixed.
+# You can now alt-click Armory's icon to show the summary without delay.
+# The search box in the find frame will now have focus by default.
+
 ==== v17.6.0 ====
 # Adjustments have been made for patch 10.1.0
 

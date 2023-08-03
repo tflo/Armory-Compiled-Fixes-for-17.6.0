@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 229 2023-05-14T11:21:00Z
+    Revision: 229 2023-07-15T13:59:28Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -187,14 +187,7 @@ function ArmoryQuestLog_Update()
                     questLogTitleText = "["..difficultyLevel.."] "..questLogTitleText;
                 end
                 questLogTitle:SetText("  "..questLogTitleText);
-                if ( questID and C_CampaignInfo.IsCampaignQuest(questID) ) then
-                    local faction = Armory:UnitFactionGroup("player");
-                    local coords = faction == "Horde" and QUEST_TAG_TCOORDS.HORDE or QUEST_TAG_TCOORDS.ALLIANCE;
-                    questLogTitle:SetNormalTexture(QUEST_ICONS_FILE);
-                    questLogTitle:GetNormalTexture():SetTexCoord( unpack(coords) );
-                else
-                    questLogTitle:ClearNormalTexture();
-                end
+                questLogTitle:ClearNormalTexture();
                 questHighlight:SetTexture("");
             end
             -- Save if its a header or not

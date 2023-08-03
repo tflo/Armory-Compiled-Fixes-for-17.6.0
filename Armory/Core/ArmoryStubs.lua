@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 204 2022-11-26T12:19:34Z
+    Revision: 204 2023-07-15T10:00:10Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -29,6 +29,15 @@
 local Armory, _ = Armory, nil;
 local BCT = LibStub("LibBabble-CreatureType-3.0"):GetReverseLookupTable();
 
+local tostring = tostring;
+local tonumber = tonumber;
+local time = time;
+local table = table;
+local ipairs = ipairs;
+local strlower = strlower;
+local strupper = strupper;
+local mod = mod;
+local floor = floor;
 
 function Armory:GetActiveSpecGroup(inspect)
     return self:SetGetCharacterValue("ActiveSpecGroup", _G.GetActiveSpecGroup()) or 1;
@@ -498,6 +507,23 @@ end
 function Armory:GetSubZoneText()
     return self:SetGetCharacterValue("SubZone", _G.GetSubZoneText());
 end
+
+function Armory:GetTexCoordsForRole(role)
+    local textureHeight, textureWidth = 256, 256;
+    local roleHeight, roleWidth = 67, 67;
+
+    if ( role == "GUIDE" ) then
+        return GetTexCoordsByGrid(1, 1, textureWidth, textureHeight, roleWidth, roleHeight);
+    elseif ( role == "TANK" ) then
+        return GetTexCoordsByGrid(1, 2, textureWidth, textureHeight, roleWidth, roleHeight);
+    elseif ( role == "HEALER" ) then
+        return GetTexCoordsByGrid(2, 1, textureWidth, textureHeight, roleWidth, roleHeight);
+    elseif ( role == "DAMAGER" ) then
+        return GetTexCoordsByGrid(2, 2, textureWidth, textureHeight, roleWidth, roleHeight);
+    else
+        error("Unknown role: "..tostring(role));
+    end
+end;
 
 function Armory:GetTimeToWellRested()
     local timestamp, rested = self:SetGetCharacterValue("TimeToWellRested", time(), _G.GetTimeToWellRested());
@@ -1116,8 +1142,8 @@ function Armory:SetGuildTabardTextures(emblemSize, columns, offset, unit, emblem
             local index = emblemFilename:match("([%d]+)");
             if ( index) then
                 index = tonumber(index);
-                xCoord = mod(index, columns) * emblemSize;
-                yCoord = floor(index / columns) * emblemSize;
+                local xCoord = mod(index, columns) * emblemSize;
+                local yCoord = floor(index / columns) * emblemSize;
                 emblemTexture:SetTexCoord(xCoord + offset, xCoord + emblemSize - offset, yCoord + offset, yCoord + emblemSize - offset);
             end
             emblemTexture:SetVertexColor(emblemR / 255, emblemG / 255, emblemB / 255);

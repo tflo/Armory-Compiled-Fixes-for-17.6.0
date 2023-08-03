@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 257 2022-10-30T09:57:47Z
+    Revision: 287 2022-10-30T09:57:47Z
     URL: http://www.wow-neighbours.com
 
     License:

@@ -501,6 +501,8 @@ L["ARMORY_SUMMARY_TITLE"] = "Optionen der Charakterübersicht"
 L["ARMORY_TALENTS"] = "Talentspezialisierung:"
 L["ARMORY_TOOLTIP_HINT1"] = "Klicken schaltet Armory um"
 L["ARMORY_TOOLTIP_HINT2"] = "Rechtsklicken für Optionen"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "Tooltip"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "Diese Optionen erlauben es, den Tooltips weitere Informationen hinzuzufügen"
 L["ARMORY_TOOLTIP_TITLE"] = "Verbesserung der Tooltips"

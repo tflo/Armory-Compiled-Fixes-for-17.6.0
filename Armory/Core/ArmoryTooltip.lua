@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 204 2023-03-26T13:52:40Z
+    Revision: 204 2023-07-15T14:27:11Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -203,8 +203,9 @@ local reagents = {};
 local function EnhanceItemTooltip(tooltip, id)
     local spaceAdded, name;
 
-    if ( not Armory:IsValidTooltip(tooltip) ) then
+    if ( not (id and Armory:IsValidTooltip(tooltip)) ) then
         return;
+
     elseif ( id ~= fetched ) then
         gemInfo = nil;
         knownBy = nil;
@@ -376,7 +377,10 @@ local reagents, reagentCount;
 local function EnhanceRecipeTooltip(tooltip, id, link)
     local spaceAdded;
 
-    if ( id ~= fetched ) then
+    if ( not id ) then
+        return;
+
+    elseif ( id ~= fetched ) then
         fetched = id;
 
         knownBy = nil;
@@ -428,7 +432,7 @@ local function EnhanceRecipeTooltip(tooltip, id, link)
 end
 
 local function EnhanceQuestTooltip(tooltip, id, link)
-    if ( not (Armory:HasQuestLog() and Armory:GetConfigShowQuestAlts()) ) then
+    if ( not (id and Armory:HasQuestLog() and Armory:GetConfigShowQuestAlts()) ) then
         return;
     end
 
@@ -458,7 +462,7 @@ end
 
 local achievements = {};
 local function EnhanceAchievementTooltip(tooltip, id, link)
-    if ( not (Armory:HasAchievements() and Armory:GetConfigShowAchievements()) ) then
+    if ( not (id and Armory:HasAchievements() and Armory:GetConfigShowAchievements()) ) then
         return;
     end
 
@@ -612,7 +616,7 @@ local function EnhanceGlyphTooltip(tooltip, id, link)
 end
 
 local function EnhanceCurrencyTooltip(tooltip, id, link)
-    if ( not (Armory:HasCurrency() and Armory:GetConfigShowItemCount()) ) then
+    if ( not (link and Armory:HasCurrency() and Armory:GetConfigShowItemCount()) ) then
         return;
     end
 
@@ -646,7 +650,7 @@ end
 local function EnhanceSpellTooltip(tooltip, id, link)
     local name = Armory:GetNameFromLink(link);
     if ( name ) then
-        if ( not (Armory:HasTradeSkills() and Armory:GetConfigShowTradeSkillRanks()) ) then
+        if ( not (id and Armory:HasTradeSkills() and Armory:GetConfigShowTradeSkillRanks()) ) then
             return;
         end
 

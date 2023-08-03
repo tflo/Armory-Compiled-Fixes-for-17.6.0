@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 1 2022-11-19T21:41:37Z
+    Revision: 1 2023-07-15T13:33:01Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -174,6 +174,8 @@ function ArmoryFrame_OnLoad(self)
 
     -- Allows Armory to be closed with the Escape key
     table.insert(UISpecialFrames, "ArmoryFrame");
+
+    _G.Armory_AddonCompartmentFunc = function() Armory:Toggle() end;
 end
 
 function ArmoryFrame_OnEvent(self, event, ...)

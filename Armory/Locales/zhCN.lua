@@ -502,6 +502,8 @@ L["ARMORY_SUMMARY_TITLE"] = "摘要选项"
 L["ARMORY_TALENTS"] = "主要天赋："
 L["ARMORY_TOOLTIP_HINT1"] = "左键点击以开启或关闭 Armory"
 L["ARMORY_TOOLTIP_HINT2"] = "右键点击打开设置界面"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "鼠标提示"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "这些选项允许您向鼠标提示添加信息。"
 L["ARMORY_TOOLTIP_TITLE"] = "鼠标提示增强"

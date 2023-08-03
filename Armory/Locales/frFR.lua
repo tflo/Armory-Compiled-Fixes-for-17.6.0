@@ -484,6 +484,8 @@ L["ARMORY_SUMMARY_TITLE"] = "Options du récapitulatif"
 L["ARMORY_TALENTS"] = "SPÉCIALISATION DES TALENTS :"
 L["ARMORY_TOOLTIP_HINT1"] = "Clic-gauche affiche Armory"
 L["ARMORY_TOOLTIP_HINT2"] = "Clic-droit pour les options"
+--[[Translation missing --]]
+L["ARMORY_TOOLTIP_HINT3"] = "Alt-click to show summary now"
 L["ARMORY_TOOLTIP_LABEL"] = "Infobulle"
 L["ARMORY_TOOLTIP_SUBTEXT"] = "Ces options permettent d'ajouter des informations aux infobulles."
 L["ARMORY_TOOLTIP_TITLE"] = "Infobulles améliorées"

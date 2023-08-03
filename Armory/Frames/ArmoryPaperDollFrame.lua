@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 245 2023-05-14T11:21:26Z
+    Revision: 245 2023-07-15T10:00:10Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -1900,7 +1900,7 @@ function ArmoryPaperDollFrame_UpdateTalent(overlay)
 
     if ( role ) then
         _G[parent.."ButtonIcon"]:SetTexture("Interface\\LFGFrame\\UI-LFG-ICON-ROLES");
-        _G[parent.."ButtonIcon"]:SetTexCoord(GetTexCoordsForRole(role));
+        _G[parent.."ButtonIcon"]:SetTexCoord(Armory:GetTexCoordsForRole(role));
     else
         SetPortraitToTexture(_G[parent.."ButtonIcon"], "Interface\\Icons\\Ability_Marksmanship");
     end

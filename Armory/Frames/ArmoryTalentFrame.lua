@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 247 2022-10-30T09:57:47Z
+    Revision: 247 2023-07-15T10:00:10Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -222,7 +222,7 @@ function ArmoryTalentFrameSpec_OnShow(self)
             self.specName:SetText(name);
             self.roleIcon:Show();
             self.roleName:SetText(_G[role]);
-            self.roleIcon:SetTexCoord(GetTexCoordsForRole(role));
+            self.roleIcon:SetTexCoord(Armory:GetTexCoordsForRole(role));
             self.tooltip = description;
         end
     else

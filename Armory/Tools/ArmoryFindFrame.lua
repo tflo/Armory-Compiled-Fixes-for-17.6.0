@@ -1,6 +1,6 @@
 --[[
     Armory Addon for World of Warcraft(tm).
-    Revision: 228 2022-11-10T10:30:17Z
+    Revision: 228 2023-07-15T20:42:58Z
     URL: http://www.wow-neighbours.com
 
     License:
@@ -320,6 +320,8 @@ function ArmoryFindFrame_Update()
     else
         WhoFrameColumn_SetWidth(ArmoryFindFrameColumnHeader3, 154);
     end
+
+    ArmoryFindFrameEditBox:SetFocus();
 
     -- ScrollFrame update
     FauxScrollFrame_Update(ArmoryFindFrameScrollFrame, numResults, FIND_LINES_DISPLAYED, ARMORY_FIND_HEIGHT);
